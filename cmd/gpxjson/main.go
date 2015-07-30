@@ -9,12 +9,21 @@ import (
 )
 
 func main() {
-	f, err := ioutil.ReadFile(os.Args[1])
-
-	if err != nil {
-		panic(err)
+	if len(os.Args) < 2 {
+		fmt.Fprint(os.Stderr, "You must provide a gpx file in input\n")
+		os.Exit(1)
 	}
 
-	p, err := gpxjson.JSON(f)
-	fmt.Printf("%s", p)
+	f, err := ioutil.ReadFile(os.Args[1])
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "%s\n", err)
+		os.Exit(1)
+	}
+
+	j, err := gpxjson.Convert(f)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "%s\n", err)
+		os.Exit(1)
+	}
+	fmt.Fprintf(os.Stdout, "%s", j)
 }

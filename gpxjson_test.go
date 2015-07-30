@@ -39,7 +39,7 @@ var sample = []byte(`<?xml version="1.0" encoding="UTF-8"?>
 </gpx>`)
 
 func TestUnmarshal(t *testing.T) {
-	if _, err := JSON(sample); err != nil {
-		t.Errorf(`JSON() error %s`, err)
+	if _, err := Convert(sample); err != nil {
+		t.Errorf(`Convert() error %s`, err)
 	}
 }

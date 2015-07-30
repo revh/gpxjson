@@ -23,10 +23,9 @@ func (t *Trkseg) MarshalJSON() ([]byte, error) {
 }
 
 // JSON return a minimal version of a gpx
-func JSON(in []byte) ([]byte, error) {
+func Convert(in []byte) ([]byte, error) {
 	var g GPX
 	err := xml.Unmarshal(in, &g)
-	//err := xml.NewDecoder(in).Decode(g)
 
 	if err != nil {
 		return nil, err

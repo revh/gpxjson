@@ -46,6 +46,8 @@ You can invoke gpxjson as a command line utility:
 
 ```sh
 $ gpxjson input.gpx > output.json
+
+output: {"segments":[[{"lat":43.76319,"lon":11.149139,"time":"2015-07-25T07:17:59Z"}],[{"lat":43.76319,"lon":11.149139,"ele":95.1,"time":"2015-07-25T07:18:00Z"},{"lat":43.76319,"lon":11.149139,"ele":95.2,"time":"2015-07-25T07:18:00Z"}]]}
 ```
 
 ###About

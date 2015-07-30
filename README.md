@@ -1,7 +1,7 @@
 GPXJSON
 =======
 
-gpxjson is command line utility and a little go library aims to convert a gpx file to a simplified version in JSON
+gpxjson is a command line utility and a little go library which aims to convert a gpx file to a simplified version in JSON
 
 ##Getting Started
 
@@ -47,7 +47,8 @@ You can invoke gpxjson as a command line utility:
 ```sh
 $ gpxjson input.gpx > output.json
 
-output: {"segments":[[{"lat":43.76319,"lon":11.149139,"time":"2015-07-25T07:17:59Z"}],[{"lat":43.76319,"lon":11.149139,"ele":95.1,"time":"2015-07-25T07:18:00Z"},{"lat":43.76319,"lon":11.149139,"ele":95.2,"time":"2015-07-25T07:18:00Z"}]]}
+output.json
+{"segments":[[{"lat":43.76319,"lon":11.149139,"time":"2015-07-25T07:17:59Z"}],[{"lat":43.76319,"lon":11.149139,"ele":95.1,"time":"2015-07-25T07:18:00Z"},{"lat":43.76319,"lon":11.149139,"ele":95.2,"time":"2015-07-25T07:18:00Z"}]]}
 ```
 
 ###About

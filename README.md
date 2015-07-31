@@ -3,6 +3,8 @@ GPXJSON
 
 gpxjson is a command line utility and a little go library which aims you to convert a gpx file to a simplified JSON version
 
+GPX https://en.wikipedia.org/wiki/GPS_eXchange_Format
+
 ##Getting Started
 
 ###Installing
